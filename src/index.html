@@ -1,12 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Task Notice App</title>
+    <title>Task List App</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
+    <section class="tasks">
+      <div class="container">
+        <h1 class="tasks-title">Task List</h1>
+        <form class="tasks-form" data-tasks-form>
+          <input
+            type="text"
+            class="tasks-input"
+            name="taskTitle"
+            placeholder="Заголовок завдання"
+          />
+          <textarea
+            class="tasks-input"
+            name="taskDescription"
+            placeholder="Опис"
+          ></textarea>
+        </form>
+      </div>
+      <div class="tasks-wrrapper" data-tasks></div>
+    </section>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>
