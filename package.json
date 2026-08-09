@@ -1,0 +1,26 @@
+{
+  "name": "task-list",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [
+    "task",
+    "to do app",
+    "notice"
+  ],
+  "author": "Vladyslav Mahar <maharvladyslav@gmail.com>",
+  "license": "ISC",
+  "description": "Task list app with using local storage",
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.9",
+    "simple-notify": "^1.0.6"
+  }
+}
