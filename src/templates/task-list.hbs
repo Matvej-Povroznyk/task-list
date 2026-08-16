@@ -1,0 +1,16 @@
+<button data-action="clear" class="clear-btn">Очистити</button>
+<ul class="task-list">
+  {{#each this}}
+    <li class="task-item">
+      <article data-id="{{id}}" class="task">
+        <div class="task-info">
+          <h2 class="task-title">{{title}}</h2>
+          {{#if description}}
+            <p class="task-desc">{{description}}</p>
+          {{/if}}
+        </div>
+        <button data-action="remove" class="task-remove"></button>
+      </article>
+    </li>
+  {{/each}}
+</ul>
